@@ -1,0 +1,24 @@
+{%extends "base.html"%}
+    
+{%block content%}
+
+<center>
+
+	<h1 class='display-2'>IMAGE CAPTIONING</h1>
+
+	<br>
+	
+<img src="{{url_for('static', filename='file.jpg')}}" alt="image" height=340px>
+
+<br>
+<br>
+<br>
+<h2 class='text-black'>Predicted caption</h2>
+<br>
+<h2 class='text-black'>
+	{{data}}
+</h2>
+
+</center>
+
+{%endblock%}
